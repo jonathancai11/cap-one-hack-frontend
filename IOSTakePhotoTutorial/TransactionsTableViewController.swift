@@ -48,7 +48,7 @@ class TransactionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: transactionCellIdentifier, for: indexPath)
 
-        cell.textLabel?.text = transactions[indexPath.row].vendor + "     " + transactions[indexPath.row].total
+        cell.textLabel?.text = transactions[indexPath.row].vendor + "     " + String(transactions[indexPath.row].total)
         // Configure the cell...
 
         return cell

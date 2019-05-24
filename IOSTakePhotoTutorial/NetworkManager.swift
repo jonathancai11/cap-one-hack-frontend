@@ -23,7 +23,7 @@ class NetworkManager {
             case .success(let data):
                 let jsonDecoder = JSONDecoder()
                 if let transactionRes = try? jsonDecoder.decode(TransactionDataResponse.self, from: data) {
-                    let transactions = transactionRes.data
+                    let transactions = transactionRes.transactions
                     completion(transactions)
                 }
                 else {
