@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="21Y-RW-Gra">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IOSTakePhotoTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G7n-hy-iaQ">
+                                <rect key="frame" x="62" y="20" width="251" height="201"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="McW-h4-L0d">
+                                <rect key="frame" x="149" y="247" width="77" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="19" id="lzp-iG-u7u"/>
+                                </constraints>
+                                <state key="normal" title="Take Photo"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGO-XF-iI7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="McW-h4-L0d" firstAttribute="top" secondItem="G7n-hy-iaQ" secondAttribute="bottom" constant="26" id="Ocd-aK-f28"/>
+                            <constraint firstItem="McW-h4-L0d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="a0t-j6-HJ0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="McW-h4-L0d" secondAttribute="bottom" constant="352" id="dmO-xP-Rm4"/>
+                            <constraint firstItem="McW-h4-L0d" firstAttribute="centerX" secondItem="G7n-hy-iaQ" secondAttribute="centerX" id="kOU-W5-Rsz"/>
+                            <constraint firstItem="McW-h4-L0d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mEj-8C-NXM"/>
+                            <constraint firstItem="G7n-hy-iaQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="x5Q-BK-MHu"/>
+                            <constraint firstItem="G7n-hy-iaQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="xAf-Kg-q3c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="6tE-KO-0uL"/>
+                    <connections>
+                        <outlet property="imageView" destination="G7n-hy-iaQ" id="zEP-Cj-woW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="549"/>
+        </scene>
+        <!--Transactions-->
+        <scene sceneID="kd9-yr-Ok5">
+            <objects>
+                <tableViewController title="Transactions" id="WoX-2M-ASi" customClass="TransactionsTableViewController" customModule="IOSTakePhotoTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="VQM-RG-Hnd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="transactionCell" rowHeight="65" id="akm-ch-X58">
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="akm-ch-X58" id="4vs-ay-11j">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WoX-2M-ASi" id="yfv-4q-Tle"/>
+                            <outlet property="delegate" destination="WoX-2M-ASi" id="wzz-zb-Nbf"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="Vtr-nf-Lew"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vpC-z3-39T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="548"/>
+        </scene>
+        <!--Input-->
+        <scene sceneID="CPL-uU-Sfx">
+            <objects>
+                <viewController title="Input" id="bvx-iR-MKA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sed-XC-Gct">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="4cP-qC-vdb"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="bvP-2f-6xl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ep6-u4-rqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="550"/>
+        </scene>
+        <!--Insights-->
+        <scene sceneID="nqF-Mc-ccT">
+            <objects>
+                <tabBarController title="Insights" id="21Y-RW-Gra" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CVU-Ue-oQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WoX-2M-ASi" kind="relationship" relationship="viewControllers" id="isf-oM-TWT"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="aIq-2A-1XV"/>
+                        <segue destination="bvx-iR-MKA" kind="relationship" relationship="viewControllers" id="YpG-bc-rAo"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T2d-8l-Ugb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="601" y="-236"/>
+        </scene>
+    </scenes>
+</document>
