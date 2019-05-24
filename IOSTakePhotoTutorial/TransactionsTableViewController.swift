@@ -16,8 +16,9 @@ class TransactionsTableViewController: UITableViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        
-        
+        NetworkManager.getTransactions(completion: { transactions in
+            self.transactions = transactions
+        })
     }
 
     
@@ -47,7 +48,7 @@ class TransactionsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: transactionCellIdentifier, for: indexPath)
 
-//        cell.textLabel?.text =
+        cell.textLabel?.text = transactions[indexPath.row].vendor + "     " + transactions[indexPath.row].total
         // Configure the cell...
 
         return cell

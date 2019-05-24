@@ -12,11 +12,11 @@ struct Transaction: Codable{
     var vendor: String
     var time: String
     var date: String
-    var items: [String: Double]
+    var items: [[String: AnyObject]]
     var total: Double
     
 }
 struct TransactionDataResponse: Codable {
     var success : Bool
-    var data : Transaction
+    var data : [Transaction]
 }

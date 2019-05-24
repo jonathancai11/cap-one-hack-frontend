@@ -13,11 +13,31 @@ class NetworkManager {
     
     private static let baseURL = "http://0.0.0.0"
     
-//    static func getTransactions()
+    //static func getTransactions()
+    
+    static func getTransactions(completion: @escaping ([Transaction]) -> Void){
+        let url = "\(baseURL)/api/user/"
+        Alamofire.request(url, method: .get, parameters: [:], encoding: Alamofire.JSONEncoding.default, headers: [:]).validate().responseData(){
+            response in
+            switch response.result {
+            case .success(let data):
+                let jsonDecoder = JSONDecoder()
+                if let transactionRes = try? jsonDecoder.decode(TransactionDataResponse.self, from: data) {
+                    let transactions = transactionRes.data
+                    completion(transactions)
+                }
+                else {
+                    print("Invalid response data")
+                }
+            case .failure( _):
+                print("failed to connect to backend")
+            }
+        }
+    }
     
     
-//    func public static get_request(path : String) -> [String: Any] {
-//        
+//    static func get_request(path : String) -> [String: Any] {
+//
 //        let url = "http://0.0.0.0:8080/" + path
 //        let req_url = URL(string: url)!
 //        var request = URLRequest(url: req_url)
@@ -32,9 +52,9 @@ class NetworkManager {
 //            print(error.localizedDescription)
 //            print("Error setting http body")
 //        }
-//        
+//
 //        var responseData : Data? = nil
-//        
+//
 //        let task = URLSession.shared.dataTask(with: request) { data, response, error in
 //            guard let data = data,
 //                let response = response as? HTTPURLResponse,
@@ -42,9 +62,9 @@ class NetworkManager {
 //                    print("error", error ?? "Unknown error")
 //                    return
 //            }
-//            
+//
 //            print("Received response from server")
-//            
+//
 //            guard (200 ... 299) ~= response.statusCode else {                    // check for http errors
 //                print("statusCode should be 2xx, but is \(response.statusCode)")
 //                return
@@ -53,7 +73,7 @@ class NetworkManager {
 //        }
 //        print("Sending request")
 //        task.resume()
-//        
+//
 //        while (responseData == nil) {
 //            //                print("Waiting")
 //        }
