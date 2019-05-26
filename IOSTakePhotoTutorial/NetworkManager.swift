@@ -11,7 +11,7 @@ import Alamofire
 
 class NetworkManager {
     
-    private static let baseURL = "http://0.0.0.0"
+    private static let baseURL = "http://692fa14e.ngrok.io"
     
     //static func getTransactions()
     
