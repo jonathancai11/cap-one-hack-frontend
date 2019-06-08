@@ -10,10 +10,11 @@ Jonathan Cai, Son Dinh, Reza Madhavan, Brandon Yuan
 
 Scan a receipt:
 
-<img src="img/take-photo.png"
-     style="height: 220px; width: 112px;" />
+<!-- ![](img/use-photo.png | width=100) -->
+
 <img src="img/use-photo.png"
-     style="height: 220px; width: 112px;" />
+     height="220px"
+     width= "112px" />
 
 Track your receipts:
 
