@@ -11,26 +11,26 @@ Jonathan Cai, Son Dinh, Reza Madhavan, Brandon Yuan
 Scan a receipt:
 
 <img src="img/take-photo.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 <img src="img/use-photo.png"
-     style="height: 37%; width: 37%;" />
+     style="height: 220px; width: 112px;" />
 
 Track your receipts:
 
 <img src="img/transactions.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 <img src="img/trans.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 
 Analyze your personal expenses:
 
 
 <img src="img/m1.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 <img src="img/m2.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 <img src="img/m3.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 <img src="img/m4.png"
-     style="height: 5%; width: 5%;" />
+     style="height: 220px; width: 112px;" />
 
