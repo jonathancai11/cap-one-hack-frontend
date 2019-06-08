@@ -1,0 +1,238 @@
+{
+    "insights": {
+        "specific_cat": [
+            {
+                "category": "GROCERY", 
+                "orderItems": {
+                    "Chips": "24.95", 
+                    "Oranges": "16.5", 
+                    "Bananas": "10.08", 
+                    "Cookies": "10.0", 
+                    "Salsa": "9.99", 
+                    "Shampoo": "7.99", 
+                    "Bread": "7.98", 
+                    "Contact Lens Solution": "7.82", 
+                    "Pears": "6.0", 
+                    "Q-Tips": "5.67", 
+                    "Facewash": "4.99", 
+                    "Apples": "3.15", 
+                    "Twixs": "1.98", 
+                    "Instant Ramen": "1.8"
+                }
+            }, 
+            {
+                "category": "ENTERTAINMENT", 
+                "orderItems": {
+                    "John Wick 3 IMAX ": "15.0", 
+                    "Avengers Endgame": "10.0"
+                }
+            }, 
+            {
+                "category": "UTILITIES", 
+                "orderItems": {
+                    "Water": "43.16", 
+                    "Internet": "39.98", 
+                    "Power": "31.76", 
+                    "Gas": "27.7"
+                }
+            }, 
+            {
+                "category": "DINING", 
+                "orderItems": {
+                    "Beef & Broccoli": "41.93", 
+                    "Double Cheeseburger": "35.91", 
+                    "Chicken Wings": "21.99", 
+                    "Pepsi": "17.32", 
+                    "Snack Wrap": "15.96", 
+                    "Chilidog": "14.97", 
+                    "QUESAD CMB SD": "12.49", 
+                    "Happy Meal": "10.0", 
+                    "Orange Chicken": "9.98", 
+                    "Chicken Sandwich": "9.98", 
+                    "Large Fries": "8.0", 
+                    "Waffle Fries": "7.98", 
+                    "Burger": "5.99", 
+                    "French Fries": "5.98", 
+                    "Chocolate Milkshake": "4.99", 
+                    "Mashed Potatos": "2.99", 
+                    "SODA BT": "2.59"
+                }
+            }, 
+            {
+                "category": "RENT", 
+                "orderItems": {
+                    "Rent": "1100.0"
+                }
+            }, 
+            {
+                "category": "ELECTRONIC", 
+                "orderItems": {
+                    "Nintendo Switch": "249.99", 
+                    "AirPods": "129.99", 
+                    "Kindle Fire": "29.99", 
+                    "iPhone Chargers": "19.99"
+                }
+            }
+        ], 
+        "vendors": [
+            {
+                "vendor": "Rent", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Richmond Gas Works", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Walmart", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Dominion", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Steak Shake", 
+                "nBills": "1"
+            }, 
+            {
+                "vendor": "City Dogs", 
+                "nBills": "3"
+            }, 
+            {
+                "vendor": "Amazon", 
+                "nBills": "3"
+            }, 
+            {
+                "vendor": "Panda Express", 
+                "nBills": "4"
+            }, 
+            {
+                "vendor": "Farm Fresh", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Richmond Water", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "urban Farmhouse...", 
+                "nBills": "1"
+            }, 
+            {
+                "vendor": "KFC", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Best Buy", 
+                "nBills": "1"
+            }, 
+            {
+                "vendor": "Chick-Fil-A", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Regal Theatre", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "McDonalds", 
+                "nBills": "8"
+            }, 
+            {
+                "vendor": "Cookout", 
+                "nBills": "1"
+            }, 
+            {
+                "vendor": "CVS Pharmarcy", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "EL TACO", 
+                "nBills": "2"
+            }, 
+            {
+                "vendor": "Comcast", 
+                "nBills": "2"
+            }
+        ], 
+        "dates": [
+            {
+                "cost": "33.95", 
+                "day": "Monday"
+            }, 
+            {
+                "cost": "44.02", 
+                "day": "Tuesday"
+            }, 
+            {
+                "cost": "25.54", 
+                "day": "Wednesday"
+            }, 
+            {
+                "cost": "31.53", 
+                "day": "Thursday"
+            }, 
+            {
+                "cost": "24.94", 
+                "day": "Friday"
+            }, 
+            {
+                "cost": "29.93", 
+                "day": "Saturday"
+            }, 
+            {
+                "cost": "40.35", 
+                "day": "Sunday"
+            }
+        ], 
+        "categories": [
+            {
+                "cost": "118.9", 
+                "vendor": "GROCERY"
+            }, 
+            {
+                "cost": "25.0", 
+                "vendor": "ENTERTAINMENT"
+            }, 
+            {
+                "cost": "142.6", 
+                "vendor": "UTILITIES"
+            }, 
+            {
+                "cost": "230.26", 
+                "vendor": "DINING"
+            }, 
+            {
+                "cost": "1100.0", 
+                "vendor": "RENT"
+            }, 
+            {
+                "cost": "429.96", 
+                "vendor": "ELECTRONIC"
+            }
+        ], 
+        "subscriptions": {
+            "monthly": [
+                {
+                    "cost": "10.00", 
+                    "service": "Netflix"
+                }, 
+                {
+                    "cost": "5.00", 
+                    "service": "Hulu"
+                }, 
+                {
+                    "cost": "5.00", 
+                    "service": "Apple Music"
+                }
+            ], 
+            "yearly": [
+                {
+                    "cost": "50.00", 
+                    "service": "Xbox Live Gold Membership"
+                }
+            ]
+        }
+    }
+}

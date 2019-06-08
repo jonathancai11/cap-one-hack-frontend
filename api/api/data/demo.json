@@ -1,0 +1,38 @@
+[
+    {
+        "date": "05/19/2019",
+        "items": [
+            {
+                "item": "QUESAD CMB SD",
+                "cost": "12.49",
+                "quantity": "1"
+            },
+            {
+                "item": "SODA BT",
+                "cost": "2.59",
+                "quantity": "1"
+            }
+        ],
+        "totalCost": 16.29,
+        "vendor": "EL TACO",
+        "time": "9:34"
+    },
+    {
+        "date": "05/19/2019",
+        "items": [
+            {
+                "item": "Shake",
+                "cost": "4.85",
+                "quantity": "1"
+            },
+            {
+                "item": "Seasonal",
+                "cost": "1.00",
+                "quantity": "1"
+            }
+        ],
+        "totalCost": 7.59,
+        "vendor": "urban Farmhouse...",
+        "time": "4:10"
+    }
+]
