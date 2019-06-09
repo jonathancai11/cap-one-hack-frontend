@@ -4,10 +4,10 @@ A receipt scanning, tracking, and analyzing app created for the 2019 Capital One
 Frontend iOS app built using Swift. Backend built with Flask framework, Google Vision API, ngrok for network tunneling.
 
 Team members:
-Jonathan Cai, Son Dinh, Reza Madhavan, Brandon Yuan
+Reza Madhavan, Jonathan Cai, Son Dinh, Brandon Yuan
 
 <img src="img/team.png"
-     style="height: 100%; width: 100%;" />
+     style="height: 80%; width: 80%;" />
 
 
 Scan a receipt:
