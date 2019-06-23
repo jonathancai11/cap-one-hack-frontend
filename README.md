@@ -1,4 +1,4 @@
-# Rackr
+# Rackr (receipt tracker)
 A receipt scanning, tracking, and analyzing app created for the 2019 Capital One Software Engineering Summit hackathon, winning 1st place.
 
 Frontend iOS app built using Swift. Backend built with Flask framework, Google Vision API, ngrok for network tunneling.
